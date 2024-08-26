@@ -2,9 +2,14 @@
 
 int main ()
 {
-    FILE * fPointer = fopen("Employees.txt", "a");
 
-    fprintf(fPointer, "\nKelly, Janitor");
+    char line[255];
+
+    FILE * fPointer = fopen("Employees.txt", "r");
+
+    fgets(line,255,fPointer);
+
+    printf("%s", line);
 
     fclose(fPointer);
     return 0;
