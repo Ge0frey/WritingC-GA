@@ -10,10 +10,14 @@ int main ()
     scanf("%s", color);
     printf("Enter Plural noun: ");
     scanf("%s", pluralNouns);
+
+    // Clear the newline character left by scanf
+    while(getchar() != '\n');
+
     printf("Enter celebrity: ");
-    scanf("%s", celebrity);
+    fgets(celebrity,20,stdin);
 
     printf("Roses are %s \n", color);
     printf("%s are blue \n", pluralNouns);
-    printf("I love %s \n", celebrity);
+    printf("I love %s", celebrity);
 }
