@@ -3,11 +3,11 @@
 void sayHi ();
 
 int main () {
-    sayHi();
+    sayHi("Mike");
     return 0;
 }
 
-void sayHi ()
+void sayHi (char name[])
 {
-    printf("Hello user \n");
+    printf("Hello %s \n", name);
 }
