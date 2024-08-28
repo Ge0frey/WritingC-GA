@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main () 
+int main()
 {
     char color[20];
-    char pluralNouns[20]; 
+    char pluralNouns[20];
     char celebrity[20];
 
     printf("Enter color: ");
@@ -12,10 +12,11 @@ int main ()
     scanf("%s", pluralNouns);
 
     // Clear the newline character left by scanf
-    while(getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
     printf("Enter celebrity: ");
-    fgets(celebrity,20,stdin);
+    fgets(celebrity, 20, stdin);
 
     printf("Roses are %s \n", color);
     printf("%s are blue \n", pluralNouns);

@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
 
     char line[255];
 
-    FILE * fPointer = fopen("Employees.txt", "r");
+    FILE *fPointer = fopen("Employees.txt", "r");
 
-    fgets(line,255,fPointer);
+    fgets(line, 255, fPointer);
 
     printf("%s", line);
 
