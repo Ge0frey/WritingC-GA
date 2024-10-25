@@ -7,6 +7,11 @@ int main()
 
     FILE *fPointer = fopen("Employees.txt", "r");
 
+    if(fPointer == NULL) {
+        printf("Error: could not open file\n");
+        return 1;
+    }
+
     fgets(line, 255, fPointer);
 
     printf("%s", line);
